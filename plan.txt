@@ -1,0 +1,21 @@
+- single page app
+    - home page
+    - store page
+    - listing page
+
+- using router
+    - index will contain navigation and footer and other pages will be nested
+
+components:
+    - menu nav bar
+        - shopping cart button
+    - footer bar
+    - home page
+        - contains info on storefront
+    - store page
+        - contains item info buttons
+    - listing page
+        - generates info based on item object
+        - routing should be dynamic based on item info
+    - cart side menu bar
+    
