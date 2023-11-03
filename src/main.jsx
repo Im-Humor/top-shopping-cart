@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Home from "./components/home.jsx";
 import Store from "./components/store.jsx";
 import "./index.css";
+import ListingPage from "./components/listingpage.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, path: "/", element: <Home /> },
 			{ path: "store", element: <Store /> },
+			{ path: "listing/:item_sku", element: <ListingPage /> },
 		],
 	},
 ]);

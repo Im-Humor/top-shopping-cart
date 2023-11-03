@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const HeaderBar = () => {
+const HeaderBar = ({ cartItems, cartDisp, setCartDisp }) => {
 	return (
 		<div className="header-bar">
 			<h2>Storefront</h2>
@@ -10,6 +10,14 @@ const HeaderBar = () => {
 				</li>
 				<li>
 					<Link to="store">Store</Link>
+				</li>
+				<li>
+					<button
+						type="submit"
+						onClick={() => setCartDisp(!cartDisp)}
+					>
+						Cart ({cartItems.length})
+					</button>
 				</li>
 			</ul>
 		</div>
